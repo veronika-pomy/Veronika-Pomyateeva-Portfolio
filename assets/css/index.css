@@ -9,7 +9,7 @@ body {
 }
 
 /* Media Queries 
-
+Use Mobile first approach
 Tablets
 @media screen and(min-width: 992px) {
     header {

@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <!-- Flexbox to arrange elements; stack as a column for smaller screens -->
         <!-- Header-->
         <h1>
             Veronika Pomyateeva
@@ -33,55 +34,56 @@
                 </li>
             </ul>
         </nav>
+        <!-- Main Profile Image -->
+        <section> <!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
+            <!-- Subheader -->
+            <h2>Subheader goes here</h2>
+            <img src="./assets/images/placeholder.png" alt="Main Website Logo"/>
+        </section>
     </header>
 
-    <section>
-        <!-- Subheader -->
-        <h2>Subheader goes here</h2>
-        <!-- Main Profile Image -->
-        <img src="./assets/images/placeholder.png" alt="Main Website Logo"/>
-    </section>
-
     <main>
-        <section>
+        <section> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
             <!-- About Me -->
-            <h3 id="about-me">About Me</h3>
-            <p>Paragraph about my professional work</p>
-            <p>Personal paragraph</p>
+            <h3 id="about-me">About Me</h3> 
+            <div>
+                <p>Paragraph about my professional work</p>
+                <p>Personal paragraph</p>
+            </div>
         </section>
-        <section>
+        <section> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
             <!-- My Work -->
             <h3 id="my-work">My Work</h3>
-            <ul>
-                <li>
+            <ul> <!-- Flexbox to arrange elements; resizing for smaller screens to make a column -->
+                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
                     <!--First Project Supposed to be Larger than the rest -->
                     <h4>Chrome Extention</h4> <!-- Needs to include placeholder link to project -->
                     <p>brief explanation</p>
                     <img src="./assets/images/placeholder.png" alt="Chrome Extention Project"/>
                 </li>
-                <li>
+                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
                     <h4>Project 2</h4> <!-- Needs to include placeholder link to project -->
                     <p>brief explanation</p>
                     <img src="./assets/images/placeholder.png" alt="Project 2"/>
                 </li>
-                <li>
+                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
                     <h4>Project 3</h4> <!-- Needs to include placeholder link to project -->
                     <p>brief explanation</p>
                     <img src="./assets/images/placeholder.png" alt="Project 3"/>
                 </li>
-                <li>
+                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
                     <h4>Project 4</h4> <!-- Needs to include placeholder link to project -->
                     <p>brief explanation</p>
                     <img src="./assets/images/placeholder.png" alt="Project 4"/>
                 </li>
-                <li>
+                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
                     <h4>Project 5</h4> <!-- Needs to include placeholder link to project -->
                     <p>brief explanation</p>
                     <img src="./assets/images/placeholder.png" alt="Project 5"/>
                 </li>
             </ul>
         </section>
-        <section>
+        <section> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
             <!-- Contact Me -->
             <h3 id="contact-me">Contact Me</h3>
             <ul>
@@ -118,32 +120,35 @@
     <body>
         <header>
             <h1>Veronika Pomyateeva</h1>
-            <ul>
-                <li>
-                    <a>About Me</a>
-                </li>
-                <li>
-                    <a>My Work</a>
-                </li>
-                <li>
-                    <a>Contact Me</a>
-                </li>
-                <li>
-                    <a>Resume</a>
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a>About Me</a>
+                    </li>
+                    <li>
+                        <a>My Work</a>
+                    </li>
+                    <li>
+                        <a>Contact Me</a>
+                    </li>
+                    <li>
+                        <a>Resume</a>
+                    </li>
+                </ul>
+            </nav>    
+            <section>
+                <h2>Subheader</h2>
+                <img/>
+            </section>
         </header>
-
-        <section>
-            <h2>Subheader</h2>
-            <img/>
-        </section>
 
         <main>
             <section>
                 <h3 id="about-me">About Me</h3>
-                <p>Professional</p>
-                <p>Personal</p>
+                <div>
+                    <p>Professional</p>
+                    <p>Personal</p>
+                </div>
             </section>
             <section>
                 <h3 id="my-work">My Work</h3>

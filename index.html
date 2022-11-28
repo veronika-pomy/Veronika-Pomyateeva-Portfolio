@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/> -->
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css"/>
     <title>Veronika Pomyateeva | Portfolio</title>
 </head>
 <body>
     <header>
+        <!-- Header-->
         <h1>
             Veronika Pomyateeva
         </h1>
+        <!-- Nav Bar -->
         <ul>
-            <li><!-- Link that scrolls to About Me -->About Me</li>
-            <li><!-- Link that scrolls to My Work -->My Work</li>
-            <li><!-- Link that scrolls to Contact Me -->Contact Me</li>
-            <li><!-- Link that opens my resume -->Resume</li>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li><!-- Link that scrolls to My Work -->
+                <a href="#my-work">My Work</a>
+            </li>
+            <li>
+                <!-- Link that scrolls to Contact Me -->
+                <a href="#contact-me">Contact Me</a>
+            </li>
+            <li><!-- Does not download, opens in browser instead, try with pdf -->
+                <!-- points to laceholder img for now, chage to open in brw if have time -->
+                <a href="./assets/images/placeholder.png" download="Veronika-Pomyateeva-Resume">Resume</a>
+            </li>
         </ul>
     </header>
 
     <section>
+        <!-- Subheader -->
         <h2>Subheader goes here</h2>
-        <!-- Main profile image goes here-->
+        <!-- Main Profile Image -->
         <img src="./assets/images/placeholder.png" alt="Main Website Logo"/>
     </section>
 
     <main>
         <section>
-            <!-- About me goes here -->
-            <h3>About Me</h3>
+            <!-- About Me -->
+            <h3 id="about-me">About Me</h3>
             <p>Paragraph about my professional work</p>
             <p>Personal paragraph</p>
         </section>
         <section>
-            <!-- My projects go here -->
-            <h3>My Work</h3>
+            <!-- My Work -->
+            <h3 id="my-work">My Work</h3>
             <ul>
                 <li>
                     <!--First Project Supposed to be Larger than the rest -->
@@ -67,14 +80,24 @@
             </ul>
         </section>
         <section>
-            <!-- Contact goes here -->
-            <h3>Contact Me</h3>
+            <!-- Contact Me -->
+            <h3 id="contact-me">Contact Me</h3>
             <ul>
-                <li><!-- My Phone Number -->555.555.5555</li>
-                <li><!-- My Website Link -->info@VeronikaPomyDeveloper.com</li>
-                <li><!-- My Gihub link -->Github</li>
-                <li><!-- My Twitter link -->Twitter</li>
-                <li><!-- My LinkedIn link -->LinkedIn</li>
+                <li>
+                    <a href="tel:+15555555555">555.555.5555</a>
+                </li>
+                <li>
+                    <a href="mailto:info@VeronikaPomyDeveloper.com">info@VeronikaPomyDeveloper.com</a>
+                </li>
+                <li>
+                    <a rel="noopener" href="https://github.com/veronika-pomy" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <a rel="noopener" href="https://www.linkedin.com/in/veronika-pomyateeva-6b19958a/" target="_blank">LinkedIn</a>
+                </li>
             </ul>
         </section>
     </main>
@@ -94,10 +117,18 @@
         <header>
             <h1>Veronika Pomyateeva</h1>
             <ul>
-                <li>About Me</li>
-                <li>My Work</li>
-                <li>Contact Me</li>
-                <li>Resume</li>
+                <li>
+                    <a>About Me</a>
+                </li>
+                <li>
+                    <a>My Work</a>
+                </li>
+                <li>
+                    <a>Contact Me</a>
+                </li>
+                <li>
+                    <a>Resume</a>
+                </li>
             </ul>
         </header>
 
@@ -108,12 +139,12 @@
 
         <main>
             <section>
-                <h3>About Me</h3>
+                <h3 id="about-me">About Me</h3>
                 <p>Professional</p>
                 <p>Personal</p>
             </section>
             <section>
-                <h3>My Work</h3>
+                <h3 id="my-work">My Work</h3>
                 <ul>
                     <li>
                         <h4>Chrome Extension Project</h4>
@@ -143,13 +174,23 @@
                 </ul>
             </section>
             <section>
-                <h3>Contact Me</h3>
+                <h3 id="contact-me">Contact Me</h3>
                 <ul>
-                    <li>Phone</li>
-                    <li>Email</li>
-                    <li>Github</li>
-                    <li>Twitter</li>
-                    <li>LinkedIn</li>
+                    <li>
+                        <a>Phone</a>
+                    </li>
+                    <li>
+                        <a>Email</a>
+                    </li>
+                    <li>
+                        <a>Github</a>
+                    </li>
+                    <li>
+                        <a>Twitter</a>
+                    </li>
+                    <li>
+                        <a>LinkedIn</a>
+                    </li>
                 </ul>
             </section>
         </main>

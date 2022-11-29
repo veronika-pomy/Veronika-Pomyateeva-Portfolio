@@ -1,12 +1,14 @@
 * {
   border: 2px solid black;
-  /* margin: 0; */
 }
 
 body {
     background-color: lightslategray;
-    margin: 0;
 }
+
+/* Use moble first approach to design the smalller screen view first */
+
+/* Project image needs to get slightly bigger when hovered over */
 
 /* Media Queries 
 Use Mobile first approach

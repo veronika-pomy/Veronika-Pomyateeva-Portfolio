@@ -9,100 +9,127 @@
     <title>Veronika Pomyateeva | Portfolio</title>
 </head>
 <body>
-    <header>
-        <!-- Flexbox to arrange elements; stack as a column for smaller screens -->
-        <!-- Header-->
-        <h1>
-            Veronika Pomyateeva
-        </h1>
-        <!-- Nav Bar -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-work">My Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <!-- Does not download, opens in browser instead, try with pdf -->
-                    <!-- points to laceholder img for now, chage to open in brw if have time -->
-                    <a href="./assets/images/placeholder.png" download="Veronika-Pomyateeva-Resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Main Profile Image -->
-        <section> <!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
-            <!-- Subheader -->
-            <h2>Subheader goes here</h2>
-            <img src="./assets/images/placeholder.png" alt="Main Website Logo"/>
+    <header> <!-- Flexbox to arrange elements; stack as a column for smaller screens -->
+        <section>
+            <!-- Header-->
+            <h1>
+                Veronika Pomyateeva
+            </h1>
+            <!-- Nav Bar -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#my-work">My Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                    <li>
+                        <!-- Does not download, opens in browser instead, try with pdf -->
+                        <!-- Points to placeholder img for now, chage to open in brw, use mocku resume I created beefore-->
+                        <a href="./assets/images/placeholder.png" download="Veronika-Pomyateeva-Resume">Resume</a>
+                    </li>
+                </ul>
+            </nav>
         </section>
+        <!-- Main Profile Image -->
+        <div> 
+            <figure> <!-- Flexbox to make overlapping design -->
+                <img src="./assets/images/placeholder.png" alt="Main Website Logo"/>
+                <div>
+                <!-- Subheader -->
+                    <h2>Subheader goes here</h2>
+                </div>
+            </figure>      
+        </div>
     </header>
 
     <main>
-        <section> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
+        <section>
+            <article> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
             <!-- About Me -->
-            <h3 id="about-me">About Me</h3> 
-            <div>
-                <p>Paragraph about my professional work</p>
-                <p>Personal paragraph</p>
-            </div>
-        </section>
-        <section> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
-            <!-- My Work -->
-            <h3 id="my-work">My Work</h3>
-            <ul> <!-- Flexbox to arrange elements; resizing for smaller screens to make a column -->
-                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
-                    <!--First Project Supposed to be Larger than the rest -->
-                    <h4>Chrome Extention</h4> <!-- Needs to include placeholder link to project -->
-                    <p>brief explanation</p>
-                    <img src="./assets/images/placeholder.png" alt="Chrome Extention Project"/>
-                </li>
-                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
-                    <h4>Project 2</h4> <!-- Needs to include placeholder link to project -->
-                    <p>brief explanation</p>
-                    <img src="./assets/images/placeholder.png" alt="Project 2"/>
-                </li>
-                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
-                    <h4>Project 3</h4> <!-- Needs to include placeholder link to project -->
-                    <p>brief explanation</p>
-                    <img src="./assets/images/placeholder.png" alt="Project 3"/>
-                </li>
-                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
-                    <h4>Project 4</h4> <!-- Needs to include placeholder link to project -->
-                    <p>brief explanation</p>
-                    <img src="./assets/images/placeholder.png" alt="Project 4"/>
-                </li>
-                <li><!-- Figure Tag Figure may need to be wrapped in div --> <!-- Flexbox to make overlapping design -->
-                    <h4>Project 5</h4> <!-- Needs to include placeholder link to project -->
-                    <p>brief explanation</p>
-                    <img src="./assets/images/placeholder.png" alt="Project 5"/>
-                </li>
-            </ul>
-        </section>
-        <section> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
-            <!-- Contact Me -->
-            <h3 id="contact-me">Contact Me</h3>
-            <ul>
-                <li>
-                    <a href="tel:+15555555555">555.555.5555</a>
-                </li>
-                <li>
-                    <a href="mailto:info@VeronikaPomyDeveloper.com">info@VeronikaPomyDeveloper.com</a>
-                </li>
-                <li>
-                    <a rel="noopener" href="https://github.com/veronika-pomy" target="_blank">Github</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">Twitter</a>
-                </li>
-                <li>
-                    <a rel="noopener" href="https://www.linkedin.com/in/veronika-pomyateeva-6b19958a/" target="_blank">LinkedIn</a>
-                </li>
-            </ul>
+                <h3 id="about-me">About Me</h3> 
+                <div>
+                    <p>Paragraph about my professional work</p>
+                    <p>Personal paragraph</p>
+                </div>
+            </article>
+            <article> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
+                <!-- My Work -->
+                <h3 id="my-work">My Work</h3>
+                <div> <!-- Flexbox to arrange elements; resizing for smaller screens to make a column -->
+                    <div><!-- Flexbox to make overlapping design -->
+                        <!--First Project Supposed to be larger than the rest -->
+                        <figure> <!-- Needs to include placeholder link to project -->
+                            <img src="./assets/images/placeholder.png" alt="Chrome Extention Project"/>
+                            <div>
+                                <h4>Chrome Extention</h4> 
+                                <p>brief explanation</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div> <!-- Flexbox to make overlapping design --> 
+                        <figure> <!-- Needs to include placeholder link to project -->
+                            <img src="./assets/images/placeholder.png" alt="Project 2"/>
+                            <div>
+                                <h4>Project 2</h4> 
+                                <p>brief explanation</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div> <!-- Flexbox to make overlapping design --> 
+                        <figure> <!-- Needs to include placeholder link to project -->
+                            <img src="./assets/images/placeholder.png" alt="Project 3"/>
+                            <div>
+                                <h4>Project 3</h4> 
+                                <p>brief explanation</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div> <!-- Flexbox to make overlapping design --> 
+                        <figure> <!-- Needs to include placeholder link to project -->
+                            <img src="./assets/images/placeholder.png" alt="Project 4"/>
+                            <div>
+                                <h4>Project 4</h4> 
+                                <p>brief explanation</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div> <!-- Flexbox to make overlapping design --> 
+                        <figure> <!-- Needs to include placeholder link to project -->
+                            <img src="./assets/images/placeholder.png" alt="Project 5"/>
+                            <div>
+                                <h4>Project 5</h4> 
+                                <p>brief explanation</p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+            <article> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
+                <!-- Contact Me -->
+                <h3 id="contact-me">Contact Me</h3>
+                <ul>
+                    <li>
+                        <a href="tel:+15555555555">555.555.5555</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@VeronikaPomyDeveloper.com">info@VeronikaPomyDeveloper.com</a>
+                    </li>
+                    <li>
+                        <a rel="noopener" href="https://github.com/veronika-pomy" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <a rel="noopener" href="https://www.linkedin.com/in/veronika-pomyateeva-6b19958a/" target="_blank">LinkedIn</a>
+                    </li>
+                </ul>
+            </article>
         </section>
     </main>
 
@@ -119,67 +146,94 @@
     <header></header>
     <body>
         <header>
-            <h1>Veronika Pomyateeva</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a>About Me</a>
-                    </li>
-                    <li>
-                        <a>My Work</a>
-                    </li>
-                    <li>
-                        <a>Contact Me</a>
-                    </li>
-                    <li>
-                        <a>Resume</a>
-                    </li>
-                </ul>
-            </nav>    
             <section>
-                <h2>Subheader</h2>
-                <img/>
-            </section>
+                <h1>Veronika Pomyateeva</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a>About Me</a>
+                        </li>
+                        <li>
+                            <a>My Work</a>
+                        </li>
+                        <li>
+                            <a>Contact Me</a>
+                        </li>
+                        <li>
+                            <a>Resume</a>
+                        </li>
+                    </ul>
+                </nav>   
+            </section> 
+            <div>
+                <figure>
+                    <img/>
+                    <div>
+                        <h2>Subheader</h2>
+                    </div>
+                </figure> 
+            </div>
         </header>
 
         <main>
             <section>
-                <h3 id="about-me">About Me</h3>
-                <div>
-                    <p>Professional</p>
-                    <p>Personal</p>
-                </div>
-            </section>
-            <section>
-                <h3 id="my-work">My Work</h3>
-                <ul>
-                    <li>
-                        <h4>Chrome Extension Project</h4>
-                        <p></p>
-                        <img/>
-                    </li>
-                    <li>
-                        <h4>Project 2</h4>
-                        <p></p>
-                        <img/>
-                    </li>
-                    <li>
-                        <h4>Project 3</h4>
-                        <p></p>
-                        <img/>
-                    </li>
-                    <li>
-                        <h4>Project 4</h4>
-                        <p></p>
-                        <img/>
-                    </li>
-                    <li>
-                        <h4>Project 5</h4> 
-                        <p></p>
-                        <img/>
-                    </li>
-                </ul>
-            </section>
+                <article>
+                    <h3 id="about-me">About Me</h3>
+                    <div>
+                        <p>Professional</p>
+                        <p>Personal</p>
+                    </div>
+                </article>
+                <article>
+                    <h3 id="my-work">My Work</h3>
+                    <div>
+                        <div>
+                            <figure>
+                                <img/>
+                                <div>
+                                    <h4>Chrome Extension Project</h4>
+                                    <p></p>
+                                </div>
+                            <figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img/>
+                                <div>
+                                    <h4>Project 2</h4>
+                                    <p></p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img/>
+                                <div>
+                                    <h4>Project 3</h4>
+                                    <p></p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img/>
+                                <div>
+                                    <h4>Project 4</h4>
+                                    <p></p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img/>
+                                <div>
+                                    <h4>Project 5</h4>
+                                    <p></p>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
             <section>
                 <h3 id="contact-me">Contact Me</h3>
                 <ul>
@@ -199,6 +253,7 @@
                         <a>LinkedIn</a>
                     </li>
                 </ul>
+            </section>
             </section>
         </main>
 

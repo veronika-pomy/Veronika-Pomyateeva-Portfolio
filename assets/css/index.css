@@ -106,16 +106,31 @@ img {
   margin-top: -8.5rem;
 }
 
+/*styling projects section for smaller devices*/
+.project-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column; */
+  justify-content: space-around;
+}
+
+/*make project 1 larger for smaller devices*/
+.first-project-box {
+  height: 20%;
+}
+
 /*position project headers and ps to overlap with img*/
 .project-header {
   position: relative;
   margin-top: -7.5rem;
+  margin-left: 0rem;
+  text-align: left;
 }
 
 .project-p {
   position: relative;
   margin-top: -1rem;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -166,7 +181,18 @@ footer {
     .container-right {
       width: 70%;
       padding-left: 5rem;
+      /* flex-direction: column; */
     }
+    /*styling projects section for larger devices*/
+    .project-box {
+      flex-direction: row; 
+      flex-wrap: wrap;
+    }
+    /*make project 1 for larger devices*/
+    .first-project-box {
+      height: 100%;
+
+  }
     .contact-menu {
       margin: auto 2rem;
       position: relative;

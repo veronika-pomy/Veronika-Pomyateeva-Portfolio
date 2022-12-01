@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css"/>
     <title>Veronika Pomyateeva | Portfolio</title>
 </head>
 <body>
-    <header> <!-- Flexbox to arrange elements; stack as a column for smaller screens -->
-        <section>
+    <header> 
+        <!-- set class to turn section with header and nav bar into flexbox -->
+        <section class="header-els">
             <!-- Header-->
             <h1>
                 Veronika Pomyateeva
             </h1>
             <!-- Nav Bar -->
             <nav>
-                <ul>
+                <ul class="nav-menu"> <!-- set class to change display properties on the nav menu -->
                     <li>
                         <a href="#about-me">About Me</a>
                     </li>
@@ -37,11 +38,12 @@
         </section>
         <!-- Main Profile Image -->
         <div> 
-            <figure> <!-- Flexbox to make overlapping design -->
+            <figure class="main-box"> 
                 <img src="./assets/images/placeholder.png" alt="Main Website Logo"/>
                 <div>
-                <!-- Subheader -->
-                    <h2>Subheader goes here</h2>
+                    <!-- Subheader -->
+                    <!-- class to overlap header with img -->
+                    <h2 class="main-sub-h">Subheader</h2>
                 </div>
             </figure>      
         </div>
@@ -49,86 +51,91 @@
 
     <main>
         <section>
-            <article> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
+            <article class="article-main"> <!-- set class to use flexbox to arrange els -->
             <!-- About Me -->
                 <h3 id="about-me">About Me</h3> 
-                <div>
-                    <p>Paragraph about my professional work</p>
-                    <p>Personal paragraph</p>
+                <!-- set class to position main content on page -->
+                <div class="container-right">
+                    <p>Professional: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, aliquid asperiores. Doloremque saepe harum vel est. Porro deleniti reprehenderit tenetur omnis ullam! Necessitatibus aut voluptas tempora sunt unde inventore ullam nesciunt odit tempore, temporibus, enim officiis recusandae consectetur eum repellendus possimus iure. Sunt, maiores iste.</p>
+                    <p>Interests: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi magnam ea magni natus, officiis at mollitia, perferendis deserunt, eaque rerum consectetur. Eveniet commodi veniam praesentium ea maiores sit similique, dolor deserunt. Ullam odio dolorum, nesciunt excepturi reprehenderit aliquid quidem. Nam amet rerum deserunt omnis fuga?</p>
                 </div>
             </article>
-            <article> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
+            <article class="article-main">
                 <!-- My Work -->
                 <h3 id="my-work">My Work</h3>
-                <div> <!-- Flexbox to arrange elements; resizing for smaller screens to make a column -->
-                    <div><!-- Flexbox to make overlapping design -->
+                <div class="container-right">
+                    <div>
                         <!--First Project Supposed to be larger than the rest -->
-                        <figure> <!-- Needs to include placeholder link to project -->
+                        <figure class="box"> <!-- Needs to include placeholder link to project -->
                             <img src="./assets/images/placeholder.png" alt="Chrome Extention Project"/>
                             <div>
-                                <h4>Chrome Extention</h4> 
-                                <p>brief explanation</p>
+                                <!-- set class for headers and ps to overlap with imgs -->
+                                <h4 class="project-header">Project 1</h4> 
+                                <p class="project-p">brief explanation</p>
                             </div>
                         </figure>
                     </div>
-                    <div> <!-- Flexbox to make overlapping design --> 
-                        <figure> <!-- Needs to include placeholder link to project -->
+                    <div> 
+                        <figure class="box"> <!-- Needs to include placeholder link to project -->
                             <img src="./assets/images/placeholder.png" alt="Project 2"/>
                             <div>
-                                <h4>Project 2</h4> 
-                                <p>brief explanation</p>
+                                <h4 class="project-header">Project 2</h4> 
+                                <p class="project-p">brief explanation</p>
                             </div>
                         </figure>
                     </div>
-                    <div> <!-- Flexbox to make overlapping design --> 
-                        <figure> <!-- Needs to include placeholder link to project -->
+                    <div> 
+                        <figure class="box"> <!-- Needs to include placeholder link to project -->
                             <img src="./assets/images/placeholder.png" alt="Project 3"/>
                             <div>
-                                <h4>Project 3</h4> 
-                                <p>brief explanation</p>
+                                <h4 class="project-header">Project 3</h4> 
+                                <p class="project-p">brief explanation</p>
                             </div>
                         </figure>
                     </div>
-                    <div> <!-- Flexbox to make overlapping design --> 
-                        <figure> <!-- Needs to include placeholder link to project -->
+                    <div> 
+                        <figure class="box"> <!-- Needs to include placeholder link to project -->
                             <img src="./assets/images/placeholder.png" alt="Project 4"/>
                             <div>
-                                <h4>Project 4</h4> 
-                                <p>brief explanation</p>
+                                <h4 class="project-header">Project 4</h4> 
+                                <p class="project-p">brief explanation</p>
                             </div>
                         </figure>
                     </div>
-                    <div> <!-- Flexbox to make overlapping design --> 
-                        <figure> <!-- Needs to include placeholder link to project -->
+                    <div>
+                        <figure class="box"> <!-- Needs to include placeholder link to project -->
                             <img src="./assets/images/placeholder.png" alt="Project 5"/>
                             <div>
-                                <h4>Project 5</h4> 
-                                <p>brief explanation</p>
+                                <h4 class="project-header">Project 5</h4> 
+                                <p class="project-p">brief explanation</p>
                             </div>
                         </figure>
                     </div>
                 </div>
             </article>
-            <article> <!--Flexbox to arrange in row; resizing for smaller screens to make a column -->
+            <article class="article-main">
                 <!-- Contact Me -->
                 <h3 id="contact-me">Contact Me</h3>
-                <ul>
-                    <li>
-                        <a href="tel:+15555555555">555.555.5555</a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@VeronikaPomyDeveloper.com">info@VeronikaPomyDeveloper.com</a>
-                    </li>
-                    <li>
-                        <a rel="noopener" href="https://github.com/veronika-pomy" target="_blank">Github</a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">Twitter</a>
-                    </li>
-                    <li>
-                        <a rel="noopener" href="https://www.linkedin.com/in/veronika-pomyateeva-6b19958a/" target="_blank">LinkedIn</a>
-                    </li>
-                </ul>
+                <!-- set class to style contact menu-->
+                <div class="container-right">
+                    <ul class="contact-menu">
+                        <li>
+                            <a href="tel:+15555555555">555.555.5555</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@VeronikaPomyDeveloper.com">info@VeronikaPomyDeveloper.com</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://github.com/veronika-pomy" target="_blank">Github</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Twitter</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://www.linkedin.com/in/veronika-pomyateeva-6b19958a/" target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </article>
         </section>
     </main>

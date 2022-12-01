@@ -1,37 +1,204 @@
+/*color scheme from https://coolors.co*/
+:root {
+  --light: floralwhite;
+  /* --txt-color: */
+}
+
+/*set 1rem to 10px to et font size (1rem=16px; 10px/0.16=62.5)*/
+html {
+  font-size: 62.5%;
+  width: auto;
+}
+
+
 * {
   border: 2px solid black;
 }
 
+/*change font family later*/
+/*set font and background color */
 body {
-    background-color: lightslategray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: var(--light);
 }
+
+/*set sizes for headers*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  margin: 1rem;
+  /* color  */
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+header {
+  text-align: center;
+  /*set flex direction for header elements to be column*/
+  display: flex;
+  flex-direction: column;
+}
+
+/*mobile-first appraoch, set flex dir to column for header els, updated for larger screens using media query*/
+.header-els {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu li,
+.contact-menu li {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+/*mobile-first appraoch, set flex dir to column for articles within main, updated for larger screens using media query*/
+.article-main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*set sizes of figure els to resize imgs to fit them*/
+.main-box,
+.box {
+  width: 100%;
+  height: 20rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/*position header to overlap with img*/
+.main-sub-h {
+  position: relative;
+  margin-top: -8.5rem;
+}
+
+/*position project headers and ps to overlap with img*/
+.project-header {
+  position: relative;
+  margin-top: -7.5rem;
+}
+
+.project-p {
+  position: relative;
+  margin-top: -1rem;
+  text-align: center;
+}
+
+
+
+
+
+.contact-menu li {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+
+/* Tablets */
+@media screen and (min-width: 992px) {
+    .header-els {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .nav-menu {
+      margin: auto 2rem;
+      position: relative;
+      top: 25%;
+    }
+    .nav-menu li {
+      display: inline;
+      position: relative;
+      top: 50%;
+    }
+    .main-sub-h {
+      position: relative;
+      margin-top: -8.5rem;
+      margin-left: 85rem;
+      flex-shrink: 1;
+    
+    }
+    .article-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    h3 {
+      width: 30%;
+      text-align: right;
+    }
+    .container-right {
+      width: 70%;
+      padding-left: 5rem;
+    }
+    .contact-menu {
+      margin: auto 2rem;
+      position: relative;
+      top: 25%;
+    }
+    .contact-menu li {
+      display: inline;
+      position: relative;
+      top: 50%;
+    }
+  }
+
+  /* Large smartphones 
+  @media screen and (max-width: 768px) {
+
+  }
+
+  Small smartphones 
+  @media screen and (max-width: 576px) {
+    .header-el {
+      
+    }
+  } */
+
+
 
 /* Use moble first approach to design the smalller screen view first */
 
-/* Project image needs to get slightly bigger when hovered over */
+/* Project image needs to get slightly bigger when hovered over, create glowing effect */
 
 /* Media Queries 
 Use Mobile first approach
-Tablets
-@media screen and(min-width: 992px) {
-    header {
-      background: #772014;
-    }
-  }
-  
-Large smartphones - navbar changes color
-  @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
-    }
-  }
-  
-Small smartphones - image placeholders change color
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-  }
 
   When hovering over the box has a glowing effect
   Check out group mini project for advanced css for flexbox hints 

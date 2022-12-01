@@ -8,4 +8,4 @@
 - rest file (look up if it'd usually added)
 - the template
 - placeholder images
-
+- attr class mini project

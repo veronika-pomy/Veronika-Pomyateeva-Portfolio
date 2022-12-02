@@ -12,7 +12,7 @@ html {
 
 
 * {
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 /*change font family later*/
@@ -67,6 +67,7 @@ header {
   /*set flex direction for header elements to be column*/
   display: flex;
   flex-direction: column;
+  margin-bottom: 2%;
 }
 
 /*mobile-first appraoch, set flex dir to column for header els, updated for larger screens using media query*/
@@ -105,14 +106,8 @@ img {
   position: relative;
   margin-top: -8.5rem;
 }
-
 /*styling projects section for smaller devices*/
-.project-box {
-  width: 100%;
-  display: flex;
-  flex-direction: column; */
-  justify-content: space-around;
-}
+
 
 /*make project 1 larger for smaller devices*/
 .first-project-box {
@@ -143,6 +138,7 @@ img {
 
 footer {
   text-align: center;
+
 }
 
 
@@ -165,9 +161,24 @@ footer {
     .main-sub-h {
       position: relative;
       margin-top: -8.5rem;
-      margin-left: 85rem;
+      margin-left: 50%;
       flex-shrink: 1;
-    
+    }
+    /*flexbox fox project boxes*/
+    .project-box {
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 10%; */
+      display: grid;
+    }
+    /*styling all project boxes*/
+    .box {
+      margin: 10% auto;
+    }
+    /*styling first project box*/
+    .first-project-box {
+      height: 20rem
     }
     .article-main {
       display: flex;
@@ -179,20 +190,10 @@ footer {
       text-align: right;
     }
     .container-right {
-      width: 70%;
+      width: 85%;
       padding-left: 5rem;
       /* flex-direction: column; */
     }
-    /*styling projects section for larger devices*/
-    .project-box {
-      flex-direction: row; 
-      flex-wrap: wrap;
-    }
-    /*make project 1 for larger devices*/
-    .first-project-box {
-      height: 100%;
-
-  }
     .contact-menu {
       margin: auto 2rem;
       position: relative;

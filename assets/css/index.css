@@ -10,7 +10,6 @@ html {
   width: auto;
 }
 
-
 * {
   /* border: 2px solid black; */
 }
@@ -90,11 +89,11 @@ header {
 }
 
 /*set sizes of figure els to resize imgs to fit them*/
-.main-box,
+/* .main-box,
 .box {
   width: 100%;
   height: 20rem;
-}
+} */
 
 img {
   width: 100%;
@@ -164,22 +163,6 @@ footer {
       margin-left: 50%;
       flex-shrink: 1;
     }
-    /*flexbox fox project boxes*/
-    .project-box {
-      /* display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      gap: 10%; */
-      display: grid;
-    }
-    /*styling all project boxes*/
-    .box {
-      margin: 10% auto;
-    }
-    /*styling first project box*/
-    .first-project-box {
-      height: 20rem
-    }
     .article-main {
       display: flex;
       flex-direction: row;
@@ -193,6 +176,61 @@ footer {
       width: 85%;
       padding-left: 5rem;
       /* flex-direction: column; */
+    }
+    /* .container-right p {
+      width: 85%;
+      padding-left: 5rem;
+    } */
+    /*styling first project box*/
+    .first-project-box {
+      grid-area: box-1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: 56vw;
+      height: 59vh;
+    }
+    .box-2 {
+      grid-area: box-2;
+      grid-column-start: 1;
+      grid-row-start: 2;
+      height: 10vh;
+    }
+    .box-3 {
+      grid-area: box-3;
+      grid-column-start: 2;
+      height: 10vh;
+    }
+    .box-4 {
+      grid-area: box-4;
+      grid-column-start: 1;
+      grid-row-start: 3;
+      height: 20vh;
+    }
+    .box-5 {
+      grid-area: box-5;
+      grid-column-start: 2;
+      grid-row-start: 3;
+      height: 20vh;
+    }
+    /*flexbox box project boxes*/
+    .project-box {
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 10%; */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 2%;
+      grid-template-areas: 
+        "box-1 box-1 "
+        "box-2 box-3"
+        "box-4 box-5";
+    }
+    /*styling all project boxes*/
+    .box {
+      /* margin: 10% auto; */
+      padding: 2%;
     }
     .contact-menu {
       margin: auto 2rem;

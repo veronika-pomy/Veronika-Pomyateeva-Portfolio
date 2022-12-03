@@ -14,7 +14,6 @@
     <header>
         <!-- set class to turn section with header and nav bar into flexbox -->
         <section class="header-els">
-            <!-- Header-->
             <h1>
                 Veronika Pomyateeva
             </h1>
@@ -32,19 +31,16 @@
                         <a href="#contact-me">Contact Me</a>
                     </li>
                     <li>
-                        <!-- Does not download, opens in browser instead, try with pdf -->
-                        <!-- Points to placeholder img for now, chage to open in brw, use mocku resume I created beefore-->
-                        <a href="./assets/images/placeholder.png" download="Veronika-Pomyateeva-Resume">Resume</a>
+                        <!-- Opens a pdf file with in a new tab -->
+                        <a href="./assets/2022-veronika-pomyateeva-resume.pdf" target="_blank">Resume</a>
                     </li>
                 </ul>
             </nav>
         </section>
-        <!-- Main Profile Image -->
         <div>
             <figure class="main-box">
                 <img src="./assets/images/placeholder.png" alt="Main Website Logo" />
                 <div>
-                    <!-- Subheader -->
                     <!-- class to overlap header with img -->
                     <h2 class="main-sub-h">Subheader</h2>
                 </div>
@@ -56,14 +52,15 @@
         <section>
             <article class="article-main">
                 <!-- set class to use flexbox to arrange els -->
-                <!-- About Me -->
                 <h3 id="about-me">About Me</h3>
                 <!-- set class to position main content on page -->
                 <div class="container-right">
                     <p>Professional: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, aliquid
                         asperiores. Doloremque saepe harum vel est. Porro deleniti reprehenderit tenetur omnis ullam!
                         Necessitatibus aut voluptas tempora sunt unde inventore ullam nesciunt odit tempore, temporibus,
-                        enim officiis recusandae consectetur eum repellendus possimus iure. Sunt, maiores iste.</p>
+                        enim officiis recusandae consectetur eum repellendus possimus iure. Sunt, maiores iste.
+                    </p>
+                    <br/>
                     <p>Interests: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi magnam ea magni natus,
                         officiis at mollitia, perferendis deserunt, eaque rerum consectetur. Eveniet commodi veniam
                         praesentium ea maiores sit similique, dolor deserunt. Ullam odio dolorum, nesciunt excepturi
@@ -71,15 +68,16 @@
                 </div>
             </article>
             <article class="article-main">
-                <!-- My Work -->
                 <h3 id="my-work">My Work</h3>
                 <div class="container-right project-box">
+                    <!-- class to style and position project 1 -->
                     <div class="first-project-box">
-                        <!--First Project Supposed to be larger than the rest -->
-                        <!--box class - styling for all projects; first-box-class - additional styling for 1st project -->
-                        <figure class="box">
-                            <!-- Needs to include placeholder link to project -->
-                            <img src="./assets/images/placeholder.png" alt="Chrome Extention Project" />
+                        <!--class to make figure resize to the div-->
+                        <figure class="figure-class">
+                            <!-- When img is clicked links to github for now insted of deployed project -->
+                            <a href="https://github.com/veronika-pomy" target="_blank">
+                                <img src="./assets/images/placeholder.png" alt="Chrome Extention Project" />
+                            </a>
                             <div>
                                 <!-- set class for headers and ps to overlap with imgs -->
                                 <h4 class="project-header">Project 1</h4>
@@ -88,9 +86,11 @@
                         </figure>
                     </div>
                     <div class="box-2">
+                        <!--box class - styling for projects 2-5-->
                         <figure class="box">
-                            <!-- Needs to include placeholder link to project -->
-                            <img src="./assets/images/placeholder.png" alt="Project 2" />
+                            <a href="https://github.com/veronika-pomy" target="_blank">
+                                <img src="./assets/images/placeholder.png" alt="Project 2" />
+                            </a>
                             <div>
                                 <h4 class="project-header">Project 2</h4>
                                 <p class="project-p">brief explanation</p>
@@ -99,8 +99,9 @@
                     </div>
                     <div class="box-3">
                         <figure class="box">
-                            <!-- Needs to include placeholder link to project -->
-                            <img src="./assets/images/placeholder.png" alt="Project 3" />
+                            <a href="https://github.com/veronika-pomy" target="_blank">
+                                <img src="./assets/images/placeholder.png" alt="Project 3" />
+                            </a>
                             <div>
                                 <h4 class="project-header">Project 3</h4>
                                 <p class="project-p">brief explanation</p>
@@ -109,8 +110,9 @@
                     </div>
                     <div class="box-4">
                         <figure class="box">
-                            <!-- Needs to include placeholder link to project -->
-                            <img src="./assets/images/placeholder.png" alt="Project 4" />
+                            <a href="https://github.com/veronika-pomy" target="_blank">
+                                <img src="./assets/images/placeholder.png" alt="Project 4" />
+                            </a>
                             <div>
                                 <h4 class="project-header">Project 4</h4>
                                 <p class="project-p">brief explanation</p>
@@ -119,8 +121,9 @@
                     </div>
                     <div class="box-5">
                         <figure class="box">
-                            <!-- Needs to include placeholder link to project -->
-                            <img src="./assets/images/placeholder.png" alt="Project 5" />
+                            <a href="https://github.com/veronika-pomy" target="_blank">
+                                <img src="./assets/images/placeholder.png" alt="Project 5" />
+                            </a>
                             <div>
                                 <h4 class="project-header">Project 5</h4>
                                 <p class="project-p">brief explanation</p>
@@ -130,16 +133,15 @@
                 </div>
             </article>
             <article class="article-main">
-                <!-- Contact Me -->
                 <h3 id="contact-me">Contact Me</h3>
                 <!-- set class to style contact menu-->
-                <div class="container-right">
+                <div class="container-right contact-me">
                     <ul class="contact-menu">
                         <li>
                             <a href="tel:+15555555555">555.555.5555</a>
                         </li>
                         <li>
-                            <a href="mailto:info@VeronikaPomyDeveloper.com">info@VeronikaPomyDeveloper.com</a>
+                            <a href="mailto:info@VeronikaPomyDeveloper.com">info@Veronika-Pomy.com</a>
                         </li>
                         <li>
                             <a rel="noopener" href="https://github.com/veronika-pomy" target="_blank">Github</a>
@@ -158,151 +160,11 @@
     </main>
 
     <footer>
+        <hr/>
         <p>
-            Copyright: Veronika Pomyateeva
+            © Veronika Pomyateeva
         </p>
     </footer>
 </body>
 
 </html>
-
-<!--
-<html>
-    <header></header>
-    <body>
-        <header>
-            <section>
-                <h1>Veronika Pomyateeva</h1>
-                <nav>
-                    <ul>
-                        <li>
-                            <a>About Me</a>
-                        </li>
-                        <li>
-                            <a>My Work</a>
-                        </li>
-                        <li>
-                            <a>Contact Me</a>
-                        </li>
-                        <li>
-                            <a>Resume</a>
-                        </li>
-                    </ul>
-                </nav>   
-            </section> 
-            <div>
-                <figure>
-                    <img/>
-                    <div>
-                        <h2>Subheader</h2>
-                    </div>
-                </figure> 
-            </div>
-        </header>
-
-        <main>
-            <section>
-                <article>
-                    <h3 id="about-me">About Me</h3>
-                    <div>
-                        <p>Professional</p>
-                        <p>Personal</p>
-                    </div>
-                </article>
-                <article>
-                    <h3 id="my-work">My Work</h3>
-                    <div>
-                        <div>
-                            <figure>
-                                <img/>
-                                <div>
-                                    <h4>Chrome Extension Project</h4>
-                                    <p></p>
-                                </div>
-                            <figure>
-                        </div>
-                        <div>
-                            <figure>
-                                <img/>
-                                <div>
-                                    <h4>Project 2</h4>
-                                    <p></p>
-                                </div>
-                            </figure>
-                        </div>
-                        <div>
-                            <figure>
-                                <img/>
-                                <div>
-                                    <h4>Project 3</h4>
-                                    <p></p>
-                                </div>
-                            </figure>
-                        </div>
-                        <div>
-                            <figure>
-                                <img/>
-                                <div>
-                                    <h4>Project 4</h4>
-                                    <p></p>
-                                </div>
-                            </figure>
-                        </div>
-                        <div>
-                            <figure>
-                                <img/>
-                                <div>
-                                    <h4>Project 5</h4>
-                                    <p></p>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </article>
-            <section>
-                <h3 id="contact-me">Contact Me</h3>
-                <ul>
-                    <li>
-                        <a>Phone</a>
-                    </li>
-                    <li>
-                        <a>Email</a>
-                    </li>
-                    <li>
-                        <a>Github</a>
-                    </li>
-                    <li>
-                        <a>Twitter</a>
-                    </li>
-                    <li>
-                        <a>LinkedIn</a>
-                    </li>
-                </ul>
-            </section>
-            </section>
-        </main>
-
-        <footer>
-            <p>COPYRIGHT</p>
-        </footer>
-    </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--->

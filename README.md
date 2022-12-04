@@ -9,3 +9,9 @@
 - the template
 - placeholder images
 - attr class mini project
+
+### The Gif
+![](./assets/Veronika%20Pomyateeva%20_%20Portfolio%20(1).gif)
+
+Add gif to Readme
+https://www.geeksforgeeks.org/how-to-add-gifs-on-readme-md-file-in-a-github-repository/
